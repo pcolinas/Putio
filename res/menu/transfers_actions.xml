@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="pe.ra.putio.MainActivity" >
+
+    
+    <item
+        android:id="@+id/delete_transfers"
+        android:title="@string/action_settings"
+        android:icon="@drawable/ic_action_discard"          
+        android:showAsAction="ifRoom" />
+
+</menu>

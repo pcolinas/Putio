@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/fileimg"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="12dp"
+        android:src="@drawable/ic_search"
+
+        />
+	<EditText 
+	   android:id="@+id/search"
+	   android:layout_width="match_parent"
+	   android:layout_height="wrap_content"
+	   android:layout_marginLeft="35dp"
+	   android:layout_marginTop="5dp"
+	   android:layout_marginRight="5dp"
+	   android:hint="Search torrent..."
+	   android:inputType="text" />
+	
+	<TextView 
+	    android:id="@+id/search_results"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="Results"
+	    android:textColor="#ffffff"
+	    android:textSize="12sp"
+	    android:layout_below="@id/search"
+	    android:background="#333333"/>
+	
+	<TextView 
+    android:id="@+id/text_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/search_results"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"/>
+	
+	<ListView
+        android:id="@+id/list_search"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/search_results"
+		/>
+	
+	<ProgressBar
+        android:id="@+id/spinner_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/search" 
+        android:layout_marginTop="50dp"
+        android:visibility="gone"/>
+     
+ 
+</RelativeLayout>
+

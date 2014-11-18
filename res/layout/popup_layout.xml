@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="wrap_content"
+   android:id="@+id/popup"
+   android:layout_height="wrap_content"
+   android:orientation="vertical" 
+   android:background="#f3f3f3">
+   
+    <RelativeLayout 
+        android:id="@+id/pop_title_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp">
+        
+        <ImageView 
+            android:id="@+id/pop_left"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"            
+            android:src="@drawable/ic_left_arrow"
+            android:clickable="true"/>
+        
+        <TextView 
+            android:id="@+id/pop_title"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"/> 
+        
+    </RelativeLayout>
+   
+    <Button
+        android:id="@+id/btn_save_here"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@id/pop_title_rl"
+        android:text="Save here"
+        android:textSize="20sp"/>
+ 
+<ListView
+        android:id="@+id/list_popup"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:layout_below="@id/btn_save_here"
+        android:layout_marginTop="10dp"
+		/>
+<TextView 
+    android:id="@+id/text_popup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btn_save_here"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"/>
+ 
+ <ProgressBar
+        android:id="@+id/spinner_popup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btn_save_here" 
+        android:layout_marginTop="50dp"
+        android:visibility="gone"/>
+ 
+</RelativeLayout>
